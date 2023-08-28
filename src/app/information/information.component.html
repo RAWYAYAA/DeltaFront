@@ -1,0 +1,37 @@
+<div class="mt-6 relative overflow-x-auto shadow-md sm:rounded-lg ">
+  <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border-8  ">
+    <thead class="text-xs text-gray-700 uppercase font-bold  bg-gray-50 dark:bg-gray-950 dark:text-gray-400">
+    <tr>
+      <th scope="col" class="text-green-600  px-6 py-3">#</th>
+      <th scope="col" class="text-green-600 px-6 py-3">Code_Banque_Remettant</th>
+      <th scope="col" class="text-green-600 px-6 py-3">Code_Operation</th>
+      <th scope="col" class="text-green-600 px-6 py-3">Etat</th>
+      <th scope="col" class="text-green-600 px-6 py-3">Montant</th>
+      <th scope="col" class="text-green-600 px-6 py-3">cleCompteTire</th>
+      <th scope="col" class="text-green-600 px-6 py-3">codeAgenceTire</th>
+      <th scope="col" class="text-green-600 px-6 py-3">nomTire</th>
+      <th scope="col" class="text-green-600 px-6 py-3">numeroCheque</th>
+      <th scope="col" class="text-green-600 px-6 py-3">numeroCompteTire</th>
+    </tr>
+    </thead>
+    <tbody class="border-8">
+    <tr class="border-8" *ngFor="let deltaFIle of information ; let i = index">
+      <td class="text-black px-6 py-3">{{ i + 1 }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.codeBanqueRemettant }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.codeOperation }}</td>
+      <td class="text-black px-6 py-3"> {{ deltaFIle.etat }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.montant }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.cleCompteTire }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.codeAgenceTire }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.nomTire }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.numeroCheque }}</td>
+      <td class="text-black px-6 py-3">{{ deltaFIle.numeroCompteTire }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
